@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of digits</title>
+</head>
+<body>
+    <input type="number" class="in">
+    <button onclick="number_of_digits()">Calculate</button>
+    <span class="res"></span>
+    <script>
+        function number_of_digits() {
+            let my_val = document.querySelector(".in").value;
+            let nbr = 0;
+            for(let i = 0; i < my_val.length; i++) {
+                nbr++;
+            }
+            document.querySelector(".res").innerHTML = nbr;
+        }
+    </script>
+</body>
+</html>

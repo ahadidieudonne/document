@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" class="in">
+<button onclick="check_palindrome()">Check palindrome</button>
+<p id="res"></p>
+<script>
+	function check_palindrome() {
+    	let val = document.querySelector(".in").value;
+        let reversed_val = val.split("").reverse().join("");
+    	let res = "";
+        if(val == reversed_val) {
+        	res = val + " is Palindrome";
+        } else {
+        	res = val + " is NOT Palindrome";
+        }
+    	document.querySelector("#res").innerHTML = res;
+    }
+</script>
+
+</body>
+</html>
